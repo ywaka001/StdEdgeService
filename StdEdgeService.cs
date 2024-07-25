@@ -51,6 +51,7 @@ namespace WindowsService1
         }
 
         // curl -X POST -H "Content-Type: application/json" -d "{\"Param1\":\"value1\", \"Param2\":\"value2\"}" http://localhost:8080/
+        // sc create StdEdgeService binPath= "C:\Users\y_wak\source\repos\start\WindowsService1\bin\Debug\WindowsService1.exe"
 
         private void OnRequest(IAsyncResult ar)
         {
