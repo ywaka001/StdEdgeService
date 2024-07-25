@@ -50,6 +50,8 @@ namespace WindowsService1
             _listener.Stop();
         }
 
+        // curl -X POST -H "Content-Type: application/json" -d "{\"Param1\":\"value1\", \"Param2\":\"value2\"}" http://localhost:8080/
+
         private void OnRequest(IAsyncResult ar)
         {
             var context = _listener.EndGetContext(ar);
